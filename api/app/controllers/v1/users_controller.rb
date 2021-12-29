@@ -3,7 +3,7 @@ class V1::UsersController < ApplicationController
     users = if params[:uid] 
       User.find_by(uid: params[:uid])
     else 
-        User.all
+      User.all
     end
     render json: users
   end
