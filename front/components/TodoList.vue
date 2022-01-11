@@ -12,7 +12,7 @@
     </v-data-table>
   </v-card>
 </template>
-    
+
 <script>
   import axios from "@/plugins/axios";
   
