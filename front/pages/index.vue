@@ -28,11 +28,7 @@ export default {
   },
   methods: {
     async addTodo(todo) {
-      const {
-        data
-      } = await axios.post("/v1/todos", {
-        todo
-      });
+      const { data } = await axios.post("/v1/todos", { todo });
       this.$store.dispatch("auth/setUser", {
         ...this.user,
         todos: [...this.user.todos, data]
